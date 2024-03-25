@@ -11,15 +11,27 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 here::i_am("report.Rmd")
+
+dataset <- readRDS(
+  here::here("data/dataset.rds")
+  )
 ```
 
 ```{r table_one}
 table1 <- readRDS(
   here::here("output/table1.rds")
-)
+  )
 ```
+# Table description
+Table 1 shows quite a bit of information about our population. The number of people whose Principal Language Spoken are English, Spanish, or Other Languages are used as primary vertical columns. We can see which counties provide the most demographic information, the sex, age, race, ethnicity, payor, and outcome information. The outcomes are interesting and reflect the similar values of the actual information found in my study. 
+
+
 
 ```{r}
-
+figure1 <- readRDS(
+  here::here("output/figure1.rds")
+  )
 ```
+# Figure description
 
+Figure 1 shows the number of visits seen each day across our 5 counties for each primary outcome of concern. We can see that heat related illnesses are the least likely reported as the primary outcome of concern. If people are admitted to the ER, it is ofen tied to a kidney outcome or fluid imbalances as the more pressing medical situation. Renal Diseases includes a wide range of causes and is the most likely cause for someone for come in to the ER. 

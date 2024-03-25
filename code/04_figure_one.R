@@ -4,7 +4,6 @@ here::i_am("code/04_figure_one.R")
 
 dataset <- readRDS(here::here("data/dataset.rds"))
 
-
 daily_visits <- dataset %>%
   pivot_longer(cols = c(HEAT1, FEI1, AKI1, CKD1, RENAL1), names_to = "Outcome", values_to = "Presence") %>%
   filter(Presence == 1) %>%
