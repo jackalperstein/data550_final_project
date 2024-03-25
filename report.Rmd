@@ -10,11 +10,13 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-
+here::i_am("report.Rmd")
 ```
 
 ```{r table_one}
-
+table1 <- readRDS(
+  here::here("output/table1.rds")
+)
 ```
 
 ```{r}
