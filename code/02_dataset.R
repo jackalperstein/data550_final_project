@@ -1,4 +1,3 @@
-
 pacman::p_load(data.table, tidyverse, gtsummary)
 
 here::i_am("code/02_analysis.Rmd")

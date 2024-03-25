@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 pacman::p_load(tidyverse)
+here::i_am("code/01_generation.Rmd")
 ```
 
 
