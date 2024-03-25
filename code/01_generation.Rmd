@@ -18,10 +18,6 @@ pacman::p_load(tidyverse)
 
 ```{r}
 # Function to select a language based on given probabilities
-```
-
-
-```{r}
 select_language <- function(n) {
   languages <- c("Abkhaz", "Afar", "Afrikaans", "Akan", "Aklan", "Albanian", "Amharic", "Arabic", "Aramaic", "Armenian", "Assamese", "Assyrian", "Azerbaijani", "Bambara", "Bantu", "Basque", "Bengali", "Bihari", "Bislama", "Bosnian", "Breton", "Bulgarian", "Burmese", "Catalan", "Chamorro", "Chinese", "Chuukese", "Corsican", "Cree", "Creole", "Croatian", "Czech", "Danish", "Dari", "Dutch", "Efik", "Elamite", "English", "Eskimo", "Esperanto", "Estonian", "Ewe", "Faroese", "Farsi", "Fijian", "Filipino", "Finnish", "Flemish", "French", "French Creole", "Fujianese", "Fulani", "Georgian", "German", "Greek", "Gujarati", "Haitian Creole", "Hausa", "Hawaiian", "Hebrew", "Hindi", "Hindustani", "Hmong", "Hungarian", "Ibibio", "Icelandic", "Igbo", "Indonesian", "Inuktitut", "Irish", "Italian", "Jamaican Patois", "Japanese", "Kannada", "Kanuri", "Khmer", "Kongo", "Korean", "Kuanyama", "Kurdish", "Kwanyama", "Lao", "Latvian", "Lithuanian", "Luganda", "Macedonian", "Malay", "Malayalam", "Maltese", "Mandingo", "Marathi", "Marshallese", "Mien (Iu Mien)", "Mixtec", "Mon-Khmer", "Mongolian", "Nagamese", "Nahuatl", "Native American", "Nauruan", "Navajo", "Nepali", "Norwegian", "Occitan", "Other", "Panjabi", "Pashto", "Persian", "Pohnpeian", "Polish", "Portuguese", "Quechua", "Romanian", "Russian", "Sabah Bisaya", "Samoan", "Serbian", "Serbo-Croatian", "Sicilian", "Sign Language", "Sinhala", "Slovak", "Slovenian", "Somalian", "Spanish", "Swahili", "Swedish", "Syrian", "Tahitian", "Taiwanese", "Tamil", "Telugu", "Thai", "Tibetan", "Tigrinya", "Tongan", "Turkish", "Twi", "Uighur", "Ukrainian", "Urdu", "Vietnamese", "Walloon", "Wolof", "Yiddish", "Yoruba", "Zapotec")
   
