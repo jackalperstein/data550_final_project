@@ -12,8 +12,6 @@
 
     -   The code for creating the required table is located in **code/03_table_one.R**
 
-```{=html}
-<!-- -->
-```
 3.  Figure Code
-    -   The code for creating the required table is located in **code/04_figure_one.R**
+
+    -   The code for creating the required figure is located in **code/04_figure_one.R**
