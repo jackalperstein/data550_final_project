@@ -6,7 +6,7 @@
 
 1.  How to generate the final report and a brief description of the contents of the report
 
-    -   Run the git command `make` and the report will generate. The report.html creating is the first item on the Makefile and all dependent objects and code are contained in the makefile. The contents are a table
+    -   Run the git command `make` and the report will generate. The code to create report.html is the first item on the Makefile and all dependent objects and code are contained in the makefile. The contents are a table which details demographic information about our study population and a chart that details the number of daily ER visits in the study.
 
 2.  Table Code
 
