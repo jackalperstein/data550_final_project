@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r read-data}
 here::i_am("report.Rmd")
 
 dataset <- readRDS(
@@ -28,12 +28,14 @@ Table 1 shows quite a bit of information about our population. The number of peo
 
 
 
-```{r}
+```{r figure1, fig.align='center', fig.width=10, fig.height=5}
 figure1 <- readRDS(
   here::here("output/figure1.rds")
   )
 figure1
 ```
+
+
 # Figure description
 
 Figure 1 shows the number of visits seen each day across our 5 counties for each primary outcome of concern. We can see that heat related illnesses are the least likely reported as the primary outcome of concern. If people are admitted to the ER, it is ofen tied to a kidney outcome or fluid imbalances as the more pressing medical situation. Renal Diseases includes a wide range of causes and is the most likely cause for someone for come in to the ER. 

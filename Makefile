@@ -12,4 +12,5 @@ figure1:
 
 .PHONY: clean
 clean:
-	rm -f output/*.rds && rm -f report.html
+	pwd
+	rm -f output/table1.rds && rm -f output/figure1.rds && rm -f report.html
