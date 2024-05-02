@@ -2,7 +2,7 @@ pacman::p_load(tidyverse)
 
 here::i_am("code/04_figure_one.R")
 
-dataset <- readRDS(here::here("data/dataset.rds"))
+dataset <- readRDS("/final_project/data/dataset.Rds")
 
 daily_visits <- dataset %>%
   pivot_longer(cols = c(HEAT1, FEI1, AKI1, CKD1, RENAL1), names_to = "Outcome", values_to = "Presence") %>%
@@ -31,4 +31,4 @@ figure1 <- ggplot(data = daily_visits, aes(x = DATE, y = Visits, color = Outcome
 
 figure1
 
-saveRDS(figure1, file = here::here("output/figure1.rds"))
+saveRDS(figure1, file = "/final_project/output/figure1.Rds")

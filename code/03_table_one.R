@@ -2,7 +2,7 @@ pacman::p_load(data.table, tidyverse, gtsummary)
 
 here::i_am("code/03_table_one.R")
 
-dataset <- readRDS(here::here("data/dataset.rds")) %>%
+dataset <- readRDS("/final_project/data/dataset.Rds") %>%
   mutate(ENG_SPA_OTH = as.factor(ifelse(LANG == "English", "English",
                                         ifelse(LANG == "Spanish", "Spanish", "Other")))) %>% 
   mutate(ENG_SPA_OTH = factor(ENG_SPA_OTH, levels = c("English", "Spanish", "Other")))
@@ -36,4 +36,4 @@ table1 <- tbl_summary(
   as_gt() %>% gt::tab_header(title = "Table 1. Descriptive Statistics",
                              subtitle = "Baseline Demographic and Language Data, 2010 - 2019")
 
-saveRDS(table1, file = here::here("output/table1.Rds"))
+saveRDS(table1, file = "/final_project/output/table1.Rds")

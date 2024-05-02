@@ -12,15 +12,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r read-data}
 here::i_am("report.Rmd")
 
-dataset <- readRDS(
-  here::here("data/dataset.rds")
-  )
+dataset <- readRDS("/final_project/data/dataset.Rds")
 ```
 
 ```{r table_one}
-table1 <- readRDS(
-  here::here("output/table1.rds")
-  )
+table1 <- readRDS("/final_project/output/table1.Rds")
 table1
 ```
 # Table description
@@ -29,9 +25,7 @@ Table 1 shows quite a bit of information about our population. The number of peo
 
 
 ```{r figure1, fig.align='center', fig.width=10, fig.height=5}
-figure1 <- readRDS(
-  here::here("output/figure1.rds")
-  )
+figure1 <- readRDS("/final_project/output/figure1.Rds")
 figure1
 ```
 

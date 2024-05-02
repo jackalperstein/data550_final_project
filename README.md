@@ -26,3 +26,27 @@ This will set up the R environment exactly as it was when the project was last d
 3.  Figure Code
 
     -   The code for creating the required figure is located in **code/04_figure_one.R**
+
+
+## How to Build the Docker image
+
+### Prerequisites
+
+- Docker: Ensure you have Docker installed on your machine. Visit [Docker's website](https://www.docker.com/get-started) for installation instructions.
+
+### Using the Docker Image
+
+The Docker image is hosted on DockerHub and can be pulled and run using the following bash command:
+
+docker pull jackalperstein/final_project:latest
+docker run --name final_report -v "$(pwd)/report:/final_project/report" jackalperstein/final_project:latest
+
+
+## Report Creation
+
+You can  run the Docker container using the Makefile included in the repository. This simplifies the process 
+to a single command:
+
+make generate-report
+
+
